@@ -9,27 +9,28 @@
 
 
 #Connect a label to code
-//We used a tabbed application playground.
-//First Tab has a label to which we are going to attempt a connection
-//In FirstViewController.h input this
+//Go to the Main.Storyboard and add a "Label" through the "View the Object Library" list on the bottom right of the screen.
+//Drag and drop it to the storyboard.
+//The window has a label to which we are going to attempt a connection
+//In ViewController.h input this
 #import <UIKit/UIKit.h>
 
-@interface FirstViewController : UIViewController
+@interface ViewController : UIViewController
 {
 IBOutlet UILabel *label;
 int integer;
 }
 @end
 
-//In FirstViewController.m input this
+//In ViewController.m input this
 
-#import "FirstViewController.h"
+#import "ViewController.h"
 
-@interface FirstViewController ()
+@interface ViewController ()
 
 @end
 
-@implementation FirstViewController
+@implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -39,5 +40,5 @@ int integer;
 }
 //There should be a bubble popped up left of "IBOutlet UILabel *label;" 
 //PS To enable split view follow this http://stackoverflow.com/questions/3655163/how-can-i-enable-vertical-split-views-in-the-xcode-ide
-//Open a split window of FirstViewController.h and the Main.Storyboard, hold control and drag your cursor from the bubble on the left of 
+//Open a split window of FirstViewController.h and the Main.Storyboard, DONT hold control, drag your cursor from the bubble on the left of 
 //"IBOutlet UILabel *label;"  to the label on the First View of you main Story board.
