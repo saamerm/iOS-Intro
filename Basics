@@ -1,0 +1,43 @@
+#Created multiple tabs to app
+//Go to the Main.Storyboard and add a "View Controller" through the "View the Object Library" list on the bottom right of the screen.
+//Drag and drop it to the storyboard. PS: Ignore that there are two tabs in this window, it goes away after the next step.
+//Hold control and Drag the cursor from the main "Tab Bar Controller" to the new View Controller you dropped.
+//Select the default automatic Relational Segue
+//PS:You can ignore the weird looking relationship lines, they change if you position the View Controller differently.
+//Change the Name of the tab by selecting The new view controller, and then selecting The tab of the view controller to open the attributes on the right top of the screen.
+//Go to the "Attributes Inspector", under "Bar Item" add the name in the "Title" input box.
+
+
+#Connect a label to code
+//We used a tabbed application playground.
+//First Tab has a label to which we are going to attempt a connection
+//In FirstViewController.h input this
+#import <UIKit/UIKit.h>
+
+@interface FirstViewController : UIViewController
+{
+IBOutlet UILabel *label;
+int integer;
+}
+@end
+
+//In FirstViewController.m input this
+
+#import "FirstViewController.h"
+
+@interface FirstViewController ()
+
+@end
+
+@implementation FirstViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    // Do any additional setup after loading the view, typically from a nib.
+    integer=0;
+    [label setText:[NSString stringWithFormat:@"%d",integer]];
+}
+//There should be a bubble popped up left of "IBOutlet UILabel *label;" 
+//PS To enable split view follow this http://stackoverflow.com/questions/3655163/how-can-i-enable-vertical-split-views-in-the-xcode-ide
+//Open a split window of FirstViewController.h and the Main.Storyboard, hold control and drag your cursor from the bubble on the left of 
+//"IBOutlet UILabel *label;"  to the label on the First View of you main Story board.
