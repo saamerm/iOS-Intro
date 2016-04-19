@@ -1,4 +1,6 @@
-#Created multiple tabs to app
+======================
+Created multiple tabs to app
+++++++++++++++++++++
 //Go to the Main.Storyboard and add a "View Controller" through the "View the Object Library" list on the bottom right of the screen.
 //Drag and drop it to the storyboard. PS: Ignore that there are two tabs in this window, it goes away after the next step.
 //Hold control and Drag the cursor from the main "Tab Bar Controller" to the new View Controller you dropped.
@@ -7,9 +9,9 @@
 //Change the Name of the tab by selecting The new view controller, and then selecting The tab of the view controller to open the attributes on the right top of the screen.
 //Go to the "Attributes Inspector", under "Bar Item" add the name in the "Title" input box.
 
-s
+
 ====================
-#Connect a label to code
+Connect a label to code
 ++++++++++++++++++++++++
 //Go to the Main.Storyboard and add a "Label" through the "View the Object Library" list on the bottom right of the screen.
 //Drag and drop it to the storyboard.
@@ -45,17 +47,21 @@ int integer;
 //Open a split window of FirstViewController.h and the Main.Storyboard, DONT hold control, drag your cursor from the bubble on the left of 
 //"IBOutlet UILabel *label;"  to the label on the First View of you main Story board.
 
-#Functions & Buttons
+========================
+Functions & Buttons
+++++++++++++++++++
 //We are going to press a button to perform a function
 //The function will change the Label from 0 to 100.
 //Steps taken from https://developer.apple.com/library/ios/recipes/xcode_help-IB_connections/chapters/CreatingAction.html
 //Open a split window of FirstViewController.m and the Main.Storyboard, hold control, drag your cursor from the Button on the storyboard 
-//to a spot on the ViewController.m file until its says "Insert Action Here"
+//to a spot on the ViewController.m file until its says "Insert Action Here" (within the implementation of ViewController)
 //Name it as testButton
 
 
 __________________________
-#General Instructions here:
+=======================
+General Instructions here:
++++++++++++++++++++++++
 
 #Enabling Split view
 // this is from  http://stackoverflow.com/questions/3655163/how-can-i-enable-vertical-split-views-in-the-xcode-ide
