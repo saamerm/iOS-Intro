@@ -1,3 +1,14 @@
+==============
+To do ahead
+++++++++++++++
+http://stackoverflow.com/questions/26559914/get-request-call-in-xcode
+http://stackoverflow.com/questions/23885571/get-request-ios
+http://stackoverflow.com/questions/7673127/how-to-send-post-or-get-request-containing-json-to-a-url
+https://developer.apple.com/library/ios/documentation/NetworkingInternetWeb/Conceptual/NetworkingOverview/WorkingWithHTTPAndHTTPSRequests/WorkingWithHTTPAndHTTPSRequests.html
+Check this for GET & POST
+
+http://stackoverflow.com/questions/5874850/how-do-i-recieve-the-current-value-of-a-slider-in-code
+Check for slider
 ======================
 Created multiple tabs to app
 ++++++++++++++++++++
@@ -56,8 +67,35 @@ Functions & Buttons
 //Open a split window of FirstViewController.m and the Main.Storyboard, hold control, drag your cursor from the Button on the storyboard 
 //to a spot on the ViewController.m file until its says "Insert Action Here" (within the implementation of ViewController)
 //Name it as testButton
+//You can type this with the curly brackets of the function just created and it will change 0 to 100 in the same text box
+//when you click the button.
+ - (IBAction)testButton:(id)sender {
+  integer=100; //shows 100
+    [label setText:[NSString stringWithFormat:@"%d",integer]];
+}
+//And you are done. I created another label called labelDown using the steps above in "Connect a label to code" 
+//and tried to see if I can initialize another variable, and it worked.
+- (IBAction)testButton:(id)sender {
+    //integer  //Shows 0
+    //integer=100; //shows 100
+    //[labelDown setText:[NSString stringWithFormat:@"%d",integer]];
+int integer2=50; Shows 50
+[labelDown setText:[NSString stringWithFormat:@"%d",integer2]];
+    
+    }
 
+=======================
+TwoCalculators -Input, FormatConversion, RadioButton, Required, IfElse
++++++++++++++++++++++++
+//Follow "#General First steps shown below"
+//Go to main story board and add two labels, and as shown using the steps above in "Connect a label to code", name them
+//as labelDown and labelUp in the ViewController.h
 
+=======================
+Returning values from methods, overloaded methods
++++++++++++++++++++++++
+=======================
+Randomizer, Picture
 __________________________
 =======================
 General Instructions here:
@@ -69,3 +107,10 @@ General Instructions here:
 //Note:To revert click on the button to its left that says "Show Standard Editor".
 //On the right screen, select the intertwined buttons again and change it from "Counterparts" to "User Interface"->Main.Storyboard
 //THen on the bottom left of the right window, click the "Hide Document.." Button
+#What is IBAction?
+//Its the Xcode way of saying void
+#General First steps
+//Save your items to the "Developer Folder"
+//Select coding for iPhone
+//Go to main storyboard and at the bottom center of the screen, 
+//where it says wAny hAny, by clicking, change that to wCompact hAny
